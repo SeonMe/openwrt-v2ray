@@ -12,7 +12,7 @@
 
 从第 2 章节的 2.1 至 2.3，2.4之后的先不用去理会。
 
-2.1、Netflix 部分
+### 2.1、Netflix 部分
 
 Trojan 文章没有提到 Netflix ，所以这里进行一个补充。
 
@@ -45,7 +45,7 @@ ipset=/nflxso.net/netflix_rules
 
 但是先要创建用于放置 V2Ray 配置文件的文件夹，如果阁下直接放置在 `/etc/` 文件夹下亦可，但需要修改启动脚本文件位置。
 
-3.1、V2Ray 启动脚本
+### 3.1、V2Ray 启动脚本
 
 直接简单粗暴：
 
@@ -75,7 +75,7 @@ start_service() {
 V2Ray 本体位置在：/usr/sbin/v2ray
 配置文件位置在：/etc/v2ray/ 文件夹
 
-3.2、V2Ray 配置文件
+### 3.2、V2Ray 配置文件
 
 阁下使用该示例文件时请先根据自己的实际情况进行修改，并删除掉所有中文注释。
 
@@ -263,7 +263,7 @@ v2ctl config < config.json > config.pb
 
 < config.json > 里面的内容就是你配置文件的绝对地址，config.pb 就是输出的文件，最后别忘记把 config.pb 放入到前面启动脚本里写好的配置文件夹目录，以及正确的名字。转换完格式以后 v2ctl 是用不到了，阁下可自行删除掉。
 
-## 3.3、iptables 部分
+## 4、iptables 部分
 
 又来到了阁下喜欢的 iptables 部分，其实阁下如果了解的话，在前面 Trojan 的文章里 iptables 规则同样也适用 V2Ray，因为本质上没什么区别，都是透明代理。
 
