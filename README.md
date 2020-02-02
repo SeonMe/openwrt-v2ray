@@ -6,8 +6,7 @@
 
 ## 2、OpenWRT
 
-首先肯定是解决 DNS 污染问题啦，无庸置疑的。具体根据楼主先前写的 Trojan 教程既可。(点击这里)[https://github.com/SeonMe/openwrt-trojan]
-
+首先肯定是解决 DNS 污染问题啦，无庸置疑的。具体根据楼主先前写的 Trojan 教程既可。[点击这里](https://github.com/SeonMe/openwrt-trojan)
 备注：
 
 从第 2 章节的 2.1 至 2.3，2.4之后的先不用去理会。
