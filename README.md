@@ -261,7 +261,7 @@ v2ctl config < config.json > config.pb
 
 说明：
 
-< config.json > 立马的内容就是你配置文件的绝对地址，config.pb 就是输出的文件，最后别忘记把 config.pb 放入到前面启动脚本里写好的配置文件夹目录，以及正确的名字。转换完格式以后 v2ctl 是用不到了，阁下可自行删除掉。
+< config.json > 里面的内容就是你配置文件的绝对地址，config.pb 就是输出的文件，最后别忘记把 config.pb 放入到前面启动脚本里写好的配置文件夹目录，以及正确的名字。转换完格式以后 v2ctl 是用不到了，阁下可自行删除掉。
 
 ## 3.3、iptables 部分
 
