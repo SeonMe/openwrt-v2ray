@@ -9,6 +9,7 @@
 首先肯定是解决 DNS 污染问题啦，无庸置疑的。具体根据楼主先前写的 Trojan 教程既可。(点击这里)[https://github.com/SeonMe/openwrt-trojan]
 
 备注：
+
 从第 2 章节的 2.1 至 2.3，2.4之后的先不用去理会。
 
 ## 2.1、Netflix 部分
@@ -33,6 +34,7 @@ ipset=/nflxso.net/netflix_rules
 ```
 
 说明：
+
 127.0.0.1#5353 是 dnscrypt-proxy 的，也就是 Netflix 交由它去解析并添加到 `netflix_rules` 这个 ipset 集。
 
 ## 3、V2Ray 客户端
@@ -242,6 +244,7 @@ V2Ray 本体位置在：/usr/sbin/v2ray
 ```
 
 说明：
+
 配置文件中没有 LOG、DNS 等功能，因为 V2Ray 的 DNS 默认是本地，所以不需要，我们需要使用其他服务来做无污染 DNS 解析方案，以及完整的路由配置。你需要做的就是根据几条节点来添加对应的 outbounds ，然后再开头的 rules 和 balancers 添加对应的条目就可以了。示例文件是两个节点，一个普通，一个 Netflix 节点，依葫芦画瓢既可。
 
 ### 3.2.1、还是配置文件
@@ -257,6 +260,7 @@ v2ctl config < config.json > config.pb
 ```
 
 说明：
+
 < config.json > 立马的内容就是你配置文件的绝对地址，config.pb 就是输出的文件，最后别忘记把 config.pb 放入到前面启动脚本里写好的配置文件夹目录，以及正确的名字。转换完格式以后 v2ctl 是用不到了，阁下可自行删除掉。
 
 ## 3.3、iptables 部分
